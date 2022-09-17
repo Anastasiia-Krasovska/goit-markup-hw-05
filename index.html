@@ -26,7 +26,7 @@
                 <ul class="site-nav list">
                     <li class="item"><a class="link-current" href="./index.html">Студія</a></li>
                     <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class="item"><a href="link">Контакти</a></li>
+                    <li class="item"><a class="link" href=".">Контакти</a></li>
                 </ul>
                 <ul class="adress-nav list">
                     <li class="item">
@@ -47,7 +47,16 @@
         <section class="hero">
             <div class="overlay-hero">
                 <h1 class="hero-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button class="hero-button" type="button">Замовити послугу</button>
+                <button class="hero-button" type="button" data-modal-open>Замовити послугу</button>
+            </div>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <button class="close-button" data-modal-close>
+                        <svg class="modal-icon">
+                            <use href="./images/ close.svg"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </section>
         <section class="section-features">
@@ -61,7 +70,8 @@
                     </li>
                     <li class="item">
                         <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="title-explanation">Завдання організації, особливо рамки і місце навчання кадрів
+                        <p class="title-explanation">Завдання організації, особливо рамки і місце навчання
+                            кадрів
                             тягне у себе.</p>
                     </li>
                     <li class="item">
@@ -305,6 +315,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
